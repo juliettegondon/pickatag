@@ -56,7 +56,7 @@ let interval = setInterval(() => {
 }
 
 // using math.floor and math.random, random button from array will be selected
-// selected button will get css class highlight applied to it
+// selected button will get css class chosen applied to it
 function pickRandomButton() {
 	let buttons = document.querySelectorAll('.button');
 	return buttons[Math.floor(Math.random() * buttons.length)];
