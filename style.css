@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Staatliches&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(90deg, #FFF6B7, #F6416C, #E96D71);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+    font-family: 'Staatliches';
+    font-size: 25px;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+}
+h2 {
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+.card {
+	width: 640px;
+    max-width: 100%;
+    position: sticky;
+  border-radius: 60px;
+  transition: 1s box-shadow;
+}
+
+#input {
+	border: none;
+	font-family: 'Staatliches', cursive;
+	font-size: 20px;
+	padding: 15px;
+	margin: 0 0 20px 20px;
+    height: 110px;
+    max-height: 150px;
+    max-width: 350PX;
+	width: 100%;
+}
+
+.button {
+	background-color:  #FFF6B7;
+	border-radius: 60px;
+	color: #F6416C;
+	display: inline-block;
+	font-size: 16px;
+	padding: 10px 20px;
+	margin: 0 5px 10px 0;
+}
+
+.button.highlight {
+	background-color:  white;
+}
+
+.card:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
