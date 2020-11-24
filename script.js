@@ -1,11 +1,12 @@
-let buttonsEl = document.getElementById('buttons');
-let input = document.getElementById('input');
-
+let buttonsEl = document.getElementById('buttons'); // get empty buttons div
+let input = document.getElementById('input'); // get input box textarea
 
     // when I hit the enter key, create buttons for each choice
-	// empty input area
+	// empty input textarea
     // setTimeout delays so the input box is cleared in time
-    
+	
+//document.addEventListener(event, function, useCapture)
+//event keyup knows that e is enter
 input.addEventListener('keyup', (e) => {
 	createButtons(e.target.value);
 	if(e.key === 'Enter') {
@@ -16,14 +17,15 @@ input.addEventListener('keyup', (e) => {
 	}
 });
 
+
 // create buttons using user input entered in the above loop, clean them up and convert to innerhtml
 //append buttons to the parent container 
 function createButtons(input) {
-	const buttons = input.split(',').filter(button => button.trim() !== '').map(button => button.trim());
+	let buttons = input.split(',').filter(button => button.trim() !== '').map(button => button.trim());
     buttonsEl.innerHTML = '';
     console.log("BUTTON TEXT ---->", buttons)
 	buttons.forEach(button => {
-        const buttonEl = document.createElement('span');
+        let buttonEl = document.createElement('span');
 		buttonEl.classList.add('button');
 		buttonEl.innerText = button;
         buttonsEl.appendChild(buttonEl);
@@ -37,7 +39,7 @@ function createButtons(input) {
 function randomSelector() {
 let times = 30;
 let interval = setInterval(() => {
-		const randomButton = pickRandomButton();
+		let randomButton = pickRandomButton();
 		highlightButton(randomButton);
 		
 		setTimeout(() => {

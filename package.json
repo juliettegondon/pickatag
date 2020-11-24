@@ -1,0 +1,22 @@
+{
+  "name": "randomselector",
+  "version": "1.0.0",
+  "description": "select a random tag",
+  "main": "script.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliettegondon/pickatag.git"
+  },
+  "author": "juliette gondon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliettegondon/pickatag/issues"
+  },
+  "homepage": "https://github.com/juliettegondon/pickatag#readme",
+  "dependencies": {
+    "sass": "^1.29.0"
+  }
+}
